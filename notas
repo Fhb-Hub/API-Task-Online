@@ -1,0 +1,10 @@
+npm init -y
+npm i -s
+npm start
+psql -U postgresql
+npm i knex -g
+ knex init
+  knex migrate:make create_table_users
+  knex migrate:make create_table_tasks
+  knex migrate:latest
+  knex migrate:rollback  //Voltar as migrações
